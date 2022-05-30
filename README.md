@@ -1,4 +1,4 @@
-[](https://img.shields.io/github/license/filipesatiro/senactatuape?style=for-the-badge)
+[](https://img.shields.io/github/license/filipesatiro/senactatuape)
 
 ![](https://github.com/filipesatiro/senactatuape/blob/main/git.png)
 # senactatuape
