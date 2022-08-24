@@ -1,0 +1,45 @@
+Novo projeto feito na escola senac 
+ Baixar a pasta boot.tar.xz.rasperry-mint.zip
+ 
+ Fazer Duall-Boot para intalar o BATOCERA
+ 
+ Entrar no Software GPARTED para criar duas partições lógicas onde ficara os arquivos e jogos
+ UMA partição lógica com o nome BATOCERA em letras maiusculas "BATOCERA" onde será intalado o sistema operacional do BATOCERA.
+ Cm uma extensão chamada FAT32 COM no mínimo 10GB
+ 
+ Criar outra extensão onde onde ficará todos os arquivos e jogos
+ Com uma extesão chamada ext4 com o nome SHARE , "SHARE" em letras maiusculas com no mínimo 50GB
+ 
+ DEPOIS DE CRIAR AS PARTIÇÕES SHARE E BATOCERA :
+ PROXIMO PASSO:
+ CRIAR UM PENDRIVE BOOTAVÉL COMO ARQUIVO boot.tar.xz.rasperry-mint.zip
+  
+ PROXIMO PASSO :
+ ENTRAR NA PASTA boot.tar.xz.rasperry-mint.zip "ENTAR COMO USUÁRIO ROOT"
+ ACHAR A PASTA CHAMADA BOOT E DAR UM COMANDO CONTROL+A
+ LOGO APÓS COLE NA PARTIÇÃO LÓGICA CHAMADA "BATOCERA" COLANDO COM O COMANDO CONTROL+C
+ 
+ PROXIMO PASSO:
+ ABRA A PASTA BATOCERA NO TERMINAL CONTROL+ALT+T
+ DE UM COMANDO CHAMADO pwd
+ DEVE APARECER NA TELA  CHMOD A+X 15_BATOCERA
+ 
+ PROXIMO PASSO:
+ ACHE A PASTA NO TERMINAL  VIM/ETC/GRUB 
+ MODIFIQUE  O ARQUIVO CHAMADO GRUB.TIMEOUT_STYLE=HIDDEN "MENU"    (para fazer esse procedimento use a tecla "insert" e para sair use o ":x")
+ 
+ MODIFIQUE O ARQUVO GRUB_TIMEOUT="10"  (para fazer esse procedimento use a tecla "insert" e para sair use o ":x")
+ FECHE O TERMINAL
+ 
+ PROXIMO PASSO:
+ ABRA O TERMINAL USE O COMANDO UPDATE-GRUB
+ OBS: DEVE APARECER A IMAGEM BATOCERA ENCONTRADA 
+LOGO APÓS DE UM REBOOT NA MÁQUINA
+
+PROXIMO PASSO:
+ABRE A PASTA ROMS E BIOS E JOGUE NA PARTIÇAO SHARE 
+OBS:MESMO QUE O SISTEMA FALE QUE VAI COPIAR ARQUIVO DUPLICADOS COPIE MESMO ASSIM
+AS IMAGENS DE JOGOS VOCẼ  JOGA EM ROMS .
+ 
+ 
+ 
