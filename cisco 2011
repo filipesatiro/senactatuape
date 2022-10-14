@@ -1,0 +1,51 @@
+!Modo EXEC privilegiado
+enable
+
+    !Configurar Data/Hora
+    clock set 14:30:00 14 oct 2022
+
+    !Modo Configuração Global
+    configure terminal
+
+        !Alterar o nome do switch
+        hostname sw-g04
+
+        !Habilitar o serviço de criptografia
+        service password-encryption
+
+        !Habilitar o serviço de Marcação de Data/Hora 
+        service timestamps log datetime msec
+
+        !Habilitar segurança de acesso 
+        login block-for 120 attemps 4 within 60
+
+        !Desabilitar o recurso de Tradução de Nomes 
+        no ip domain-lookup
+
+        !DESAFIO: PROCURAR NA INTERNET IMAGENS DO TIPO ASCII ART 
+        !Configurar o Banner da Mensagem do Dia 
+        banner motd #Switch do Grupo-04#
+
+        !Habilitar segurança do Enable 
+        enable secret 123@senac 
+
+        !Criar os usuários locais 
+        username bruno secret 123@senac 
+
+        !Configurar a Porta Console
+        line console 0
+
+            !Habilitar autenticação local
+            login local
+
+            !Sincronismo de Logs 
+            logging synchronous
+
+            !Habilitar a segurança de tempo 
+            exec-timeout 5 30 
+
+            !Sair de todos os modos
+            end
+
+!Salvar as configurações
+copy running-config startup-config 
